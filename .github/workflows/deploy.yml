@@ -36,10 +36,10 @@ jobs:
             git pull origin main
 
             echo "Installation des dépendances..."
-            bun install
+            /home/etudiant/.bun/bin/bun install
 
             echo "Compilation Astro..."
-            bun run --bun build
+            /home/etudiant/.bun/bin/bun run --bun build
 
             echo "Redémarrage de l'application..."
             sudo systemctl restart scolarite
