@@ -47,6 +47,9 @@ jobs:
             echo "Vérification du service..."
             sudo systemctl status scolarite
 
+            echo "Attente du démarrage..."
+            sleep 3
+
             echo "Health check..."
             curl --fail http://localhost:3000/
 
